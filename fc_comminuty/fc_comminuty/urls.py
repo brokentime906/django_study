@@ -19,6 +19,7 @@ from fcuser.views import home
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('fcuser/' ,include('fcuser.urls')),
+    path('board/', include('board.urls')),
     path('' , home), #여기 원래 path('/' , home), 이거하면 안댐
     
 ]
